@@ -11,12 +11,12 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <body>
-    <header>
-
-    </header>
+    @include('partials.header')
 
     <main>
         @yield('main_content')
     </main>
+
+    @include('partials.footer')
 </body>
 </html>
