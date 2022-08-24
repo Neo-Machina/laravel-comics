@@ -23,4 +23,64 @@ li {
 }
 li a {
   text-decoration: none;
+  color: inherit;
+}
+
+header {
+  height: 90px;
+}
+header .header-top {
+  text-transform: uppercase;
+  background-color: #0282f9;
+  color: white;
+  font-size: 10px;
+  height: 20px;
+}
+header .header-top .flex-header-top {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+}
+header .header-top .flex-header-top div:last-child {
+  margin-left: 60px;
+}
+header .flex-header-bottom {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+}
+header .logo img {
+  width: 60px;
+}
+header nav {
+  height: 100%;
+}
+header nav ul {
+  height: 100%;
+  display: flex;
+}
+header nav ul li {
+  padding: 0 10px;
+  position: relative;
+  line-height: 85px;
+  cursor: pointer;
+}
+header nav ul li.selected-item {
+  color: #0282f9;
+}
+header nav ul li.selected-item::after {
+  content: "";
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  display: inline-block;
+  background-color: #0282f9;
+}
+header nav ul li a {
+  font-size: 10px;
+  text-transform: uppercase;
 }
