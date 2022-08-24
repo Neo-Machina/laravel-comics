@@ -27,7 +27,7 @@ li a {
 }
 
 header {
-  height: 90px;
+  height: 102px;
 }
 header .header-top {
   text-transform: uppercase;
@@ -83,4 +83,15 @@ header nav ul li.selected-item::after {
 header nav ul li a {
   font-size: 10px;
   text-transform: uppercase;
+}
+
+section {
+  height: 20.5rem;
+}
+section img {
+  height: 19.8rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center 0px;
+     object-position: center 0px;
 }

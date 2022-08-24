@@ -23,12 +23,12 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="#">
+                        <a href="{{ route('home') }}">
                             characters
                         </a>
                     </li>   
                     <li class="selected-item">
-                        <a href="#">
+                        <a href="{{ route('comics') }}">
                             comics
                         </a>
                     </li>  
