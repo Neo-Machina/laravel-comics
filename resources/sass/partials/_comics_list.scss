@@ -1,0 +1,61 @@
+#comics_section {
+    color: white;
+    background-color: #1c1c1c;
+    height: 32.5rem;
+
+    .container {
+        position: relative; 
+
+        .current_series {
+            background-color: $brand_main_color;
+            padding: 10px 20px;
+            display: inline-block;
+            text-transform: $text_uppercase;
+            font-size: 18px;
+            font-weight: bold;
+            position: absolute;
+            top: -22px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 0 15px;
+
+            .col {
+                width: calc((100% / 6) - 18px);
+            
+                .comic_card {
+                    margin-top: 40px;
+            
+                    img {
+                        aspect-ratio: 1/1;
+                        object-fit: cover;
+                        object-position: center 0;
+                    }
+            
+                    h3 {
+                        text-transform: $text_uppercase;
+                        font-size: 10px;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        } 
+
+        .button_comics {
+            text-transform: uppercase;
+            padding: 10px 50px;
+            background-color: $brand_main_color;
+            font-size: 11px;
+            color: white;
+            border: $brand_main_color;
+            position: absolute;
+            top: 490px;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+    } 
+}

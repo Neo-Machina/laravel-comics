@@ -85,13 +85,65 @@ header nav ul li a {
   text-transform: uppercase;
 }
 
-section {
-  height: 20.5rem;
-}
-section img {
+#jumbotron img {
   height: 19.8rem;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center 0px;
      object-position: center 0px;
+}
+
+#comics_section {
+  color: white;
+  background-color: #1c1c1c;
+  height: 32.5rem;
+}
+#comics_section .container {
+  position: relative;
+}
+#comics_section .container .current_series {
+  background-color: #0282f9;
+  padding: 10px 20px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  position: absolute;
+  top: -22px;
+}
+#comics_section .container .row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 15px;
+}
+#comics_section .container .row .col {
+  width: calc(16.6666666667% - 18px);
+}
+#comics_section .container .row .col .comic_card {
+  margin-top: 40px;
+}
+#comics_section .container .row .col .comic_card img {
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center 0;
+     object-position: center 0;
+}
+#comics_section .container .row .col .comic_card h3 {
+  text-transform: uppercase;
+  font-size: 10px;
+  margin-top: 10px;
+}
+#comics_section .container .button_comics {
+  text-transform: uppercase;
+  padding: 10px 50px;
+  background-color: #0282f9;
+  font-size: 11px;
+  color: white;
+  border: #0282f9;
+  position: absolute;
+  top: 490px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

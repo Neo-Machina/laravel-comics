@@ -6,4 +6,6 @@
 
 @section('main_content')
     @include('components.jumbotron')
+
+    @include('components.comics-list')
 @endsection
