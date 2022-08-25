@@ -20,9 +20,42 @@ Route::get('/', function () {
 Route::get('/comics', function () {
     $comics_array = config('comics');
 
-    $data = [
-        'comics' => $comics_array
+    // $data = [
+    //     'comics' => $comics_array,
+    // ];
+
+    $icon_menu = [
+        [
+            'url' => '#',
+            'imgSrc' => 'img/buy-comics-digital-comics.png',
+            'altImg' => 'digital-comics',
+            'text' => 'digital comics'
+        ],
+        [
+            'url' => '#',
+            'imgSrc' => 'img/buy-comics-merchandise.png',
+            'altImg' => 'dc merchandise',
+            'text' => 'dc merchandise'
+        ],
+        [
+            'url' => '#',
+            'imgSrc' => 'img/buy-comics-subscriptions.png',
+            'altImg' => 'subscription',
+            'text' => 'subscription'
+        ],
+        [
+            'url' => '#',
+            'imgSrc' => 'img/buy-comics-shop-locator.png',
+            'altImg' => 'comic shop locator',
+            'text' => 'comic shop locator'
+        ],
+        [
+            'url' => '#',
+            'imgSrc' => 'img/buy-dc-power-visa.svg',
+            'altImg' => 'visa',
+            'text' => 'dc power visa'
+        ]
     ];
 
-    return view('comics', $data);
+    return view('comics', ['comics' => $comics_array, 'icons' => $icon_menu]);
 })->name('comics');
