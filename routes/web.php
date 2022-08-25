@@ -57,84 +57,23 @@ Route::get('/comics', function () {
         ]
     ];
 
-    $footer_data = [
-        'dc_comics' => [
-            'title' => 'dc comics',
-            'url' => '#',
-            'footer_links' => [
-                'characters',
-                'comics',
-                'movies',
-                'tv',
-                'game',
-                'videos',
-                'news'
-            ]
-        ],
-        'shop' => [
-            'title' => 'shop',
-            'url' => '#',
-            'footer_links' => [
-                'shop DC',
-                'shop DC collectibles',
-            ]
-        ],
-        'dc'=> [
-            'title' => 'dc',
-            'url' => '#',
-            'footer_links' => [
-                'terms of use',
-                'privacy police (new)',
-                'ad choices',
-                'advertising',
-                'jobs',
-                'subscriptions',
-                'talent workshops',
-                'cpsc certificates',
-                'ratings',
-                'shop help',
-                'contact us'
-            ]
-        ],
-        'sites' => [
-            'title' => 'sites',
-            'url' => '#',
-            'footer_links' => [
-                'DC',
-                'MAD magazine',
-                'DC kids',
-                'DC universe',
-                'DC power visa',
-            ]
-        ],
-        'iconMenuFooter' => [
-            [
-                'url' => '#',
-                'iconImg' => 'img/footer-facebook.png',
-                'alt' => 'facebook-icon'
-            ],
-            [
-                'url' => '#',
-                'iconImg' => 'img/footer-twitter.png',
-                'alt' => 'twitter-icon'
-            ],
-            [
-                'url' => '#',
-                'iconImg' => 'img/footer-youtube.png',
-                'alt'=> 'youtube-icon'
-            ],
-            [
-                'url' => '#',
-                'iconImg' => 'img/footer-pinterest.png',
-                'alt' => 'pinterest-icon'
-            ],
-            [
-                'url' => '#',
-                'iconImg' => 'img/footer-periscope.png',
-                'alt' => 'periscope-icon'
-            ]
-        ]
+    return view('comics', ['comics' => $comics_array, 'icons' => $icon_menu]);
+})->name('comics');
+
+Route::get('/single-comic/{id}', function ($id) {
+    $comics_array = config('comics');
+
+    $current_comic = [];
+
+    foreach ($comics_array as $comic) {
+        if($comic['id'] == $id) {
+            $current_comic = $comic;
+        }
+    }
+
+    $data = [
+        'current_comic' => $current_comic
     ];
 
-    return view('comics', ['comics' => $comics_array, 'icons' => $icon_menu, 'footer_links' => $footer_data]);
-})->name('comics');
+    return view('single-comic', $data);
+})->name('single_comic');

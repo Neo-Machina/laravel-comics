@@ -1,27 +1,108 @@
+@php
+    $footer_data = [
+        'dc_comics' => [
+            'title' => 'dc comics',
+            'url' => '#',
+            'footer_links' => [
+                'characters',
+                'comics',
+                'movies',
+                'tv',
+                'game',
+                'videos',
+                'news'
+            ]
+        ],
+        'shop' => [
+            'title' => 'shop',
+            'url' => '#',
+            'footer_links' => [
+                'shop DC',
+                'shop DC collectibles',
+            ]
+        ],
+        'dc'=> [
+            'title' => 'dc',
+            'url' => '#',
+            'footer_links' => [
+                'terms of use',
+                'privacy police (new)',
+                'ad choices',
+                'advertising',
+                'jobs',
+                'subscriptions',
+                'talent workshops',
+                'cpsc certificates',
+                'ratings',
+                'shop help',
+                'contact us'
+            ]
+        ],
+        'sites' => [
+            'title' => 'sites',
+            'url' => '#',
+            'footer_links' => [
+                'DC',
+                'MAD magazine',
+                'DC kids',
+                'DC universe',
+                'DC power visa',
+            ]
+        ],
+        'iconMenuFooter' => [
+            [
+                'url' => '#',
+                'iconImg' => 'img/footer-facebook.png',
+                'alt' => 'facebook-icon'
+            ],
+            [
+                'url' => '#',
+                'iconImg' => 'img/footer-twitter.png',
+                'alt' => 'twitter-icon'
+            ],
+            [
+                'url' => '#',
+                'iconImg' => 'img/footer-youtube.png',
+                'alt'=> 'youtube-icon'
+            ],
+            [
+                'url' => '#',
+                'iconImg' => 'img/footer-pinterest.png',
+                'alt' => 'pinterest-icon'
+            ],
+            [
+                'url' => '#',
+                'iconImg' => 'img/footer-periscope.png',
+                'alt' => 'periscope-icon'
+            ]
+        ]
+    ];
+@endphp
+
 <footer>
     <footer>
         <!-- footer-top -->
         <div class="footer_top container">
             <div class="row">
                 <div class="col">
-                    <h3>{{ $footer_links['dc_comics']['title'] }}</h3>
+                    <h3>{{ $footer_data['dc_comics']['title'] }}</h3>
                     
                     <ul>
-                        @foreach ( $footer_links['dc_comics']['footer_links'] as $link )
+                        @foreach ( $footer_data['dc_comics']['footer_links'] as $link )
                             <li>
-                                <a href="{{ $footer_links['dc_comics']['url'] }}">
+                                <a href="{{ $footer_data['dc_comics']['url'] }}">
                                     {{ $link }}
                                 </a>
                             </li>
                         @endforeach
                     </ul>
 
-                    <h3>{{ $footer_links['shop']['title'] }}</h3>
+                    <h3>{{ $footer_data['shop']['title'] }}</h3>
 
                     <ul>
-                        @foreach ( $footer_links['shop']['footer_links'] as $link )
+                        @foreach ( $footer_data['shop']['footer_links'] as $link )
                             <li>
-                                <a href="{{ $footer_links['shop']['url'] }}">
+                                <a href="{{ $footer_data['shop']['url'] }}">
                                     {{ $link }}
                                 </a>
                             </li>
@@ -29,12 +110,12 @@
                     </ul>
                 </div>
                 <div class="col">
-                    <h3>{{ $footer_links['dc']['title'] }}</h3>
+                    <h3>{{ $footer_data['dc']['title'] }}</h3>
 
                     <ul>
-                        @foreach ( $footer_links['dc']['footer_links'] as $link )
+                        @foreach ( $footer_data['dc']['footer_links'] as $link )
                             <li>
-                                <a href="{{ $footer_links['shop']['url'] }}">
+                                <a href="{{ $footer_data['shop']['url'] }}">
                                     {{ $link }}
                                 </a>
                             </li>
@@ -42,12 +123,12 @@
                     </ul>
                 </div>
                 <div class="col">
-                    <h3>{{ $footer_links['sites']['title'] }}</h3>
+                    <h3>{{ $footer_data['sites']['title'] }}</h3>
 
                     <ul>
-                        @foreach ( $footer_links['sites']['footer_links'] as $link )
+                        @foreach ( $footer_data['sites']['footer_links'] as $link )
                             <li>
-                                <a href="{{  $footer_links['sites']['url'] }}">
+                                <a href="{{  $footer_data['sites']['url'] }}">
                                     {{ $link }}
                                 </a>
                             </li>
@@ -74,7 +155,7 @@
                     <h3>follows us</h3>
 
                     <ul>
-                        @foreach ( $footer_links['iconMenuFooter'] as $icon )
+                        @foreach ( $footer_data['iconMenuFooter'] as $icon )
                             <li>
                                 <a href="{{ $icon['url'] }}">
                                     <img src={{ $icon['iconImg'] }} alt={{ $icon ['alt'] }}>

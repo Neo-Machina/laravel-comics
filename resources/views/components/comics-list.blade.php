@@ -5,11 +5,15 @@
         <div class="row">
             @foreach ($comics as $comic)
                 <div class="col">
-                    <div class="comic_card">
-                        <img src="{{ $comic['thumb']}} " alt="{{ $comic['series'] }}">
-            
-                        <h3>{{ $comic['series'] }}</h3>
-                    </div>
+                    <a href="{{ route('single_comic', [
+                        'id' =>$comic['id']
+                    ]) }}">
+                        <div class="comic_card">
+                            <img src="{{ $comic['thumb']}} " alt="{{ $comic['series'] }}">
+                
+                            <h3>{{ $comic['series'] }}</h3>
+                        </div>
+                    </a>
                 </div>  
             @endforeach
         </div>
