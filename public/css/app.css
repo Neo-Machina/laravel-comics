@@ -217,6 +217,7 @@ footer .footer_top .row .col ul li a {
 footer .footer_top .row .cookie_policy {
   color: #797979;
   font-size: 10px;
+  margin-right: -118px;
 }
 footer .footer_top .row .cookie_policy .blue_text {
   color: #0282f9;
