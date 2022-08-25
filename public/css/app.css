@@ -263,3 +263,40 @@ footer .footer_bottom .container .flex-icon_links ul li {
 footer .footer_bottom .container .flex-icon_links ul li a img {
   width: 28px;
 }
+
+.comic-book-section {
+  height: 65px;
+  background-color: #0282f9;
+}
+.comic-book-section .small_container {
+  width: 53%;
+  margin: 0 auto;
+}
+.comic-book-section .small_container .comic-cover-card {
+  position: relative;
+}
+.comic-book-section .small_container .comic-cover-card img {
+  width: 9.5rem;
+  position: absolute;
+  bottom: -3rem;
+  border: 1px solid white;
+}
+.comic-book-section .small_container .comic-cover-card .cover-text {
+  color: white;
+  text-transform: uppercase;
+  background-color: #00a9d9;
+  font-size: 10px;
+  padding: 1px 5px;
+}
+.comic-book-section .small_container .comic-cover-card .comic-book-top-text {
+  position: absolute;
+  bottom: 10.3rem;
+  left: 0.07rem;
+}
+.comic-book-section .small_container .comic-cover-card .comic-book-bottom-text {
+  position: absolute;
+  bottom: -2.94rem;
+  left: 0.07rem;
+  width: 18.6%;
+  text-align: center;
+}

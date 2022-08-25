@@ -5,5 +5,22 @@
 @endsection
 
 @section('main_content')
-    <h1>informazioni sul fumetto</h1>
+    @include('components.jumbotron')
+
+    {{-- comic-book-cover --}}
+    <div class="comic-book-section">
+        <div class="small_container">
+            <div class="comic-cover-card">
+                <img src="{{ $current_comic['thumb'] }}" alt="{{ $current_comic['series'] }}">
+
+                <div class="comic-book-top-text cover-text">
+                    comic book
+                </div>
+
+                <div class="comic-book-bottom-text cover-text">
+                    view gallery
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
