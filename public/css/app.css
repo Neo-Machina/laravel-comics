@@ -176,3 +176,88 @@ header nav ul li a {
   text-transform: uppercase;
   color: white;
 }
+
+footer {
+  height: 310px;
+  background-image: url("../img/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+footer .footer_top {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+}
+footer .footer_top .row {
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  width: 350px;
+  margin-top: 20px;
+}
+footer .footer_top .row .col {
+  width: 33.3333333333%;
+}
+footer .footer_top .row .col:not(:last-child) {
+  padding-right: 20px;
+}
+footer .footer_top .row .col h3 {
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 12px 0;
+}
+footer .footer_top .row .col ul li {
+  line-height: 13px;
+}
+footer .footer_top .row .col ul li a {
+  color: #797979;
+  text-transform: capitalize;
+  font-size: 10px;
+}
+footer .footer_top .row .cookie_policy {
+  color: #797979;
+  font-size: 10px;
+}
+footer .footer_top .row .cookie_policy .blue_text {
+  color: #0282f9;
+}
+footer .footer_top .dc_logo_bg {
+  width: 27rem;
+  overflow: hidden;
+  margin-top: -75px;
+}
+footer .footer_bottom {
+  background-color: #303030;
+  height: 80px;
+}
+footer .footer_bottom .container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .footer_bottom .container .btn_footer {
+  color: white;
+  border: 1px solid #0282f9;
+  padding: 10px;
+  background-color: #303030;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+footer .footer_bottom .container .flex-icon_links {
+  display: flex;
+  align-items: center;
+}
+footer .footer_bottom .container .flex-icon_links h3 {
+  text-transform: uppercase;
+  font-size: 15px;
+  margin-right: 15px;
+  color: #0282f9;
+}
+footer .footer_bottom .container .flex-icon_links ul li {
+  display: inline-block;
+  margin: 0 8px;
+}
+footer .footer_bottom .container .flex-icon_links ul li a img {
+  width: 28px;
+}
