@@ -256,7 +256,7 @@ footer .footer_top .row .cookie_policy .blue_text {
 }
 footer .footer_top .dc_logo_bg {
   width: 27rem;
-  margin-top: -75px;
+  margin-top: -63px;
 }
 footer .footer_bottom {
   background-color: #303030;
@@ -445,10 +445,11 @@ footer .footer_bottom .container .flex-icon_links ul li a img {
 }
 
 #icons-comic-section {
-  background-color: grey;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  background-color: #f6f6f6;
+  border-top: 1px solid #dcdcdc;
   height: 110px;
+  position: relative;
+  z-index: 10;
 }
 #icons-comic-section .small_container {
   height: 100%;

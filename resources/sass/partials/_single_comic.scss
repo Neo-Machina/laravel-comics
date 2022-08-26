@@ -186,10 +186,11 @@
 
 // icons-comic-section
 #icons-comic-section {
-    background-color: grey;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    background-color: #f6f6f6;
+    border-top: $border_single_card;
     height: 110px;
+    position: relative;
+    z-index: 10;
 
     .small_container {
         height: 100%;
