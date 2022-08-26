@@ -63,10 +63,15 @@ header nav ul {
   display: flex;
 }
 header nav ul li {
-  padding: 0 10px;
+  margin: 0 17px;
   position: relative;
   line-height: 85px;
   cursor: pointer;
+}
+header nav ul li .blue_caret_down {
+  color: #0282f9;
+  font-size: 9px;
+  margin-left: 4px;
 }
 header nav ul li.selected-item {
   color: #0282f9;
@@ -84,6 +89,31 @@ header nav ul li.selected-item::after {
 header nav ul li a {
   font-size: 10px;
   text-transform: uppercase;
+}
+header .search {
+  display: flex;
+  border-bottom: 2px solid #0282f9;
+  width: 110px;
+}
+header .search input {
+  border: 0;
+  color: #000;
+  font-size: 5px;
+  outline: none;
+  padding-left: 10px;
+  text-align: right;
+  vertical-align: middle;
+  width: 100%;
+}
+header .search input::-moz-placeholder {
+  color: #000;
+  font-size: 12px;
+  font-weight: bold;
+}
+header .search input::placeholder {
+  color: #000;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 #jumbotron img {
@@ -153,6 +183,7 @@ header nav ul li a {
   height: 110px;
   background-color: #0282f9;
   position: relative;
+  z-index: 10;
 }
 #icon_section .container {
   height: 100%;
@@ -225,12 +256,13 @@ footer .footer_top .row .cookie_policy .blue_text {
 }
 footer .footer_top .dc_logo_bg {
   width: 27rem;
-  overflow: hidden;
   margin-top: -75px;
 }
 footer .footer_bottom {
   background-color: #303030;
   height: 80px;
+  position: relative;
+  z-index: 10;
 }
 footer .footer_bottom .container {
   display: flex;
@@ -351,6 +383,11 @@ footer .footer_bottom .container .flex-icon_links ul li a img {
 }
 #comic-description-section .comic-row .comic-right-col div:first-child {
   text-transform: uppercase;
+  text-align: end;
+  font-size: 12px;
+}
+#comic-description-section .comic-row .comic-right-col img {
+  width: 14.5rem;
 }
 
 #info_comic_section {
@@ -405,4 +442,39 @@ footer .footer_bottom .container .flex-icon_links ul li a img {
 #info_comic_section .info-row h3 {
   font-size: 16px;
   padding-bottom: 20px;
+}
+
+#icons-comic-section {
+  background-color: grey;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  height: 110px;
+}
+#icons-comic-section .small_container {
+  height: 100%;
+  z-index: 10;
+}
+#icons-comic-section .small_container ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#icons-comic-section .small_container ul li a .flex-icon {
+  display: flex;
+  align-items: center;
+}
+#icons-comic-section .small_container ul li a .flex-icon img {
+  width: 35px;
+  margin-right: 12px;
+}
+#icons-comic-section .small_container ul li a .flex-icon div {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: white;
+}
+
+#home_section {
+  background-color: #0282f9;
+  height: 70px;
 }

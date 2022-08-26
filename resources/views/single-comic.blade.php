@@ -54,7 +54,7 @@
                 <div class="comic-right-col">
                     <div>advertisment</div>
 
-                    <img src="{{ asset('img/adv.jpg') }}" alt="advertisment">
+                    <img src="{{ asset('img/dc-power-visa.jpg') }}" alt="advertisment">
                 </div>
             </div>
         </div>
@@ -122,4 +122,24 @@
             </div>
         </div>
     </section>
+
+    {{-- icons-comic-section --}}
+    <section id="icons-comic-section">
+        <div class="small_container"> 
+            {{-- <ul>
+                @foreach ( $icon_menu as $icon )
+                    <li>
+                        <a href="{{ $icon['url'] }}">
+                            <div class="flex-icon">
+                                <div>{{ $icon['text'] }}</div>
+    
+                                <img src="{{ asset($icon['imgSrc']) }}" altImg="{{ $icon['altImg'] }}">
+                            </div>
+                        </a>
+                    </li>
+                @endforeach
+            </ul> --}}
+        </div>
+    </section>
 @endsection
+

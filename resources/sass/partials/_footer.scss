@@ -55,7 +55,6 @@ footer {
 
         .dc_logo_bg {
             width: 27rem;
-            overflow: hidden;
             margin-top: -75px;
         }
     }
@@ -64,6 +63,8 @@ footer {
     .footer_bottom {
         background-color: #303030;
         height: 80px;
+        position: relative;
+        z-index: 10;
 
         .container {
             display: flex;

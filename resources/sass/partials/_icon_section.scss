@@ -2,10 +2,12 @@
     height: 110px;
     background-color: $brand_main_color;
     position: relative;
+    z-index: 10;
 
     .container {
         height: 100%;
         z-index: 10;
+
         ul {
             height: 100%;
             display: flex;

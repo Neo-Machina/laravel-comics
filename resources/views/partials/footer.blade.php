@@ -80,91 +80,89 @@
 @endphp
 
 <footer>
-    <footer>
-        <!-- footer-top -->
-        <div class="footer_top container">
-            <div class="row">
-                <div class="col">
-                    <h3>{{ $footer_data['dc_comics']['title'] }}</h3>
-                    
-                    <ul>
-                        @foreach ( $footer_data['dc_comics']['footer_links'] as $link )
-                            <li>
-                                <a href="{{ $footer_data['dc_comics']['url'] }}">
-                                    {{ $link }}
-                                </a>
-                            </li>
-                        @endforeach
-                    </ul>
+    <!-- footer-top -->
+    <div class="footer_top container">
+        <div class="row">
+            <div class="col">
+                <h3>{{ $footer_data['dc_comics']['title'] }}</h3>
+                
+                <ul>
+                    @foreach ( $footer_data['dc_comics']['footer_links'] as $link )
+                        <li>
+                            <a href="{{ $footer_data['dc_comics']['url'] }}">
+                                {{ $link }}
+                            </a>
+                        </li>
+                    @endforeach
+                </ul>
 
-                    <h3>{{ $footer_data['shop']['title'] }}</h3>
+                <h3>{{ $footer_data['shop']['title'] }}</h3>
 
-                    <ul>
-                        @foreach ( $footer_data['shop']['footer_links'] as $link )
-                            <li>
-                                <a href="{{ $footer_data['shop']['url'] }}">
-                                    {{ $link }}
-                                </a>
-                            </li>
-                        @endforeach
-                    </ul>
-                </div>
-                <div class="col">
-                    <h3>{{ $footer_data['dc']['title'] }}</h3>
+                <ul>
+                    @foreach ( $footer_data['shop']['footer_links'] as $link )
+                        <li>
+                            <a href="{{ $footer_data['shop']['url'] }}">
+                                {{ $link }}
+                            </a>
+                        </li>
+                    @endforeach
+                </ul>
+            </div>
+            <div class="col">
+                <h3>{{ $footer_data['dc']['title'] }}</h3>
 
-                    <ul>
-                        @foreach ( $footer_data['dc']['footer_links'] as $link )
-                            <li>
-                                <a href="{{ $footer_data['shop']['url'] }}">
-                                    {{ $link }}
-                                </a>
-                            </li>
-                        @endforeach                     
-                    </ul>
-                </div>
-                <div class="col">
-                    <h3>{{ $footer_data['sites']['title'] }}</h3>
+                <ul>
+                    @foreach ( $footer_data['dc']['footer_links'] as $link )
+                        <li>
+                            <a href="{{ $footer_data['shop']['url'] }}">
+                                {{ $link }}
+                            </a>
+                        </li>
+                    @endforeach                     
+                </ul>
+            </div>
+            <div class="col">
+                <h3>{{ $footer_data['sites']['title'] }}</h3>
 
-                    <ul>
-                        @foreach ( $footer_data['sites']['footer_links'] as $link )
-                            <li>
-                                <a href="{{  $footer_data['sites']['url'] }}">
-                                    {{ $link }}
-                                </a>
-                            </li>
-                        @endforeach
-                    </ul>
-                </div>
-
-                <div class="cookie_policy">
-                    All Site Content TM and &copy; 2020 DC Entertainment, unless otherwise <span class="blue_text">noted here</span>. All rights reserved.
-                    <span class="blue_text">Cookies Settings</span> 
-                </div>
+                <ul>
+                    @foreach ( $footer_data['sites']['footer_links'] as $link )
+                        <li>
+                            <a href="{{  $footer_data['sites']['url'] }}">
+                                {{ $link }}
+                            </a>
+                        </li>
+                    @endforeach
+                </ul>
             </div>
 
-            <div class="dc_logo_bg">
-                <img src="{{ asset('img/dc-logo-bg.png') }}" alt="logo-dc-background">
+            <div class="cookie_policy">
+                All Site Content TM and &copy; 2020 DC Entertainment, unless otherwise <span class="blue_text">noted here</span>. All rights reserved.
+                <span class="blue_text">Cookies Settings</span> 
             </div>
         </div>
-        <!-- footer-bottom -->
-        <div class="footer_bottom">
-            <div class="container">
-                <button class="btn_footer">sign-up now!</button>
 
-                <div class="flex-icon_links">
-                    <h3>follows us</h3>
+        <div class="dc_logo_bg">
+            <img src="{{ asset('img/dc-logo-bg.png') }}" alt="logo-dc-background">
+        </div>
+    </div>
+    <!-- footer-bottom -->
+    <div class="footer_bottom">
+        <div class="container">
+            <button class="btn_footer">sign-up now!</button>
 
-                    <ul>
-                        @foreach ( $footer_data['iconMenuFooter'] as $icon )
-                            <li>
-                                <a href="{{ $icon['url'] }}">
-                                    <img src={{ $icon['iconImg'] }} alt={{ $icon ['alt'] }}>
-                                </a>
-                            </li>
-                        @endforeach
-                    </ul>
-                </div>
+            <div class="flex-icon_links">
+                <h3>follows us</h3>
+
+                <ul>
+                    @foreach ( $footer_data['iconMenuFooter'] as $icon )
+                        <li>
+                            <a href="{{ $icon['url'] }}">
+                                <img src={{ asset($icon['iconImg']) }} alt={{ $icon ['alt'] }}>
+                            </a>
+                        </li>
+                    @endforeach
+                </ul>
             </div>
         </div>
-    </footer>
+    </div>
 </footer>

@@ -101,6 +101,12 @@
         .comic-right-col {
             & div:first-child {
                 text-transform: $text_uppercase;
+                text-align: end;
+                font-size: 12px;
+            }
+
+            img {
+                width: 14.5rem;
             }
         }
     } 
@@ -174,6 +180,47 @@
         h3 {
             font-size: 16px;
             padding-bottom: 20px;
+        }
+    }
+}
+
+// icons-comic-section
+#icons-comic-section {
+    background-color: grey;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    height: 110px;
+
+    .small_container {
+        height: 100%;
+        z-index: 10;
+
+        ul {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            li {
+                a {
+                    .flex-icon {
+                        display: flex;
+                        align-items: center;
+
+                        img {
+                            width: 35px;
+                            margin-right: 12px;
+                            
+                        }
+
+                        div {
+                            font-size: 11px;
+                            text-transform: $text_uppercase;
+                            color: white;
+                        }
+                    }
+                }
+            }
         }
     }
 }

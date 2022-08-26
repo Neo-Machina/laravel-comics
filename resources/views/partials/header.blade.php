@@ -3,10 +3,14 @@
     <div class="header-top">
         <div class="container flex-header-top">
             <div>
-                dc power visa&reg;
+                <a href="#">
+                    dc power&#8480; visa&reg;
+                </a>
             </div>
             <div>
-                addition dc sites <span><i class="fa-solid fa-caret-down"></i></span>
+                <a href="#">
+                    addition dc sites <span><i class="fa-solid fa-caret-down"></i></span>
+                </a>
             </div>
         </div>
     </div>
@@ -16,7 +20,9 @@
         <div class="flex-header-bottom">
             <!-- header-logo -->
             <div class="logo">
-                <img src="{{ asset('img/dc-logo.png') }}" alt="logo-dc">
+                <a href="{{ route('home') }}">
+                    <img src="{{ asset('img/dc-logo.png') }}" alt="logo-dc">
+                </a>
             </div>
     
             <!-- header-nav -->
@@ -69,15 +75,17 @@
                     </li>  
                     <li>
                         <a href="#">
-                            shop <span><i class="fa-solid fa-caret-down"></i></span>
+                            shop <span class="blue_caret_down"><i class="fa-solid fa-caret-down"></i></span>
                         </a>
-                    </li>  
-                    <li>
-                        {{-- search-bar --}}
-                        <input type="text" placeholder="Search"> <i class="fa-solid fa-magnifying-glass"></i>
-                    </li>     
+                    </li>      
                 </ul>
             </nav>
+
+            {{-- search-bar --}}
+            <div class="search">
+                <input type="search" name="header-search" placeholder="Search"> 
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
         </div>
     </div>
 </header>

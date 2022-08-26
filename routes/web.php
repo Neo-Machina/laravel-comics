@@ -14,15 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+
+
     return view('home');
 })->name('home');
 
 Route::get('/comics', function () {
     $comics_array = config('comics');
-
-    // $data = [
-    //     'comics' => $comics_array,
-    // ];
 
     $icon_menu = [
         [
@@ -62,7 +60,7 @@ Route::get('/comics', function () {
 
 Route::get('/single-comic/{id}', function ($id) {
     $comics_array = config('comics');
-
+    
     $current_comic = [];
 
     foreach ($comics_array as $comic) {
@@ -72,7 +70,7 @@ Route::get('/single-comic/{id}', function ($id) {
     }
 
     $data = [
-        'current_comic' => $current_comic
+        'current_comic' => $current_comic,
     ];
 
     return view('single-comic', $data);

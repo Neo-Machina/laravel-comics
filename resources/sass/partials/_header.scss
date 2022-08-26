@@ -43,10 +43,17 @@ header {
             display: flex;
 
             li{
-                padding: 0 10px;
+                margin: 0 17px;
                 position: relative;
                 line-height: 85px;
                 cursor: pointer;
+
+                .blue_caret_down {
+                    color: $brand_main_color;
+                    font-size: 9px;
+                    margin-left: 4px;
+                }
+
 
                 &.selected-item {
                     color: $brand_main_color;
@@ -67,6 +74,29 @@ header {
                     font-size: 10px;
                     text-transform: $text_uppercase;
                 }
+            }
+        }
+    }
+
+    // search-bar
+    .search {
+        display: flex;
+        border-bottom: 2px solid $brand_main_color;
+        width: 110px;
+
+        input {
+            border: 0;
+            color: #000;
+            font-size: 5px;
+            outline: none;
+            padding-left: 10px;
+            text-align: right;
+            vertical-align: middle;
+            width: 100%;
+            &::placeholder {
+                color: #000;
+                font-size: 12px;
+                font-weight: bold;
             }
         }
     }
