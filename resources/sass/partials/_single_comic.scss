@@ -41,6 +41,7 @@
     width: 53%;
     margin: 0 auto;
 }
+
 // comic-description-section 
 #comic-description-section {
     padding: 55px 0;
@@ -103,5 +104,76 @@
             }
         }
     } 
-    
+}
+
+// info-comic-section
+#info_comic_section {
+    background-color: #f6f6f6;
+    padding: 25px 0 95px;
+    border-top: $border_single_card;
+
+    .info-row {
+        display: flex;
+        font-size: 10px;
+
+        .talent_col {
+            width: 50%;
+            margin-right: 40px;
+
+            .writers-row, .artists-row {
+                display: flex;
+                justify-content: space-between;
+                padding: 8px 0;
+
+                .right-artists-col, .right-writers-col {
+                    width: 16rem;
+                }
+            }
+        }    
+
+        .specs_col {
+            width: 50%;
+
+            .series-row, .us-price-row, .sale-date-row {
+                display: flex;
+                padding: 8px 0;
+                justify-content: space-between;
+
+                .right-series-col, .right-price-col, .right-sale-date-col {
+                    text-transform: $text_uppercase;
+                    width: 15rem;
+                }
+            }
+
+            .series-row {
+                .right-series-col {
+                    text-transform: $text_uppercase;
+                }
+            }
+
+            .sale-date-row {
+                .left-sale-date-col {
+                    text-transform: $text_capitalize;
+                }
+            }
+            
+        }
+
+        .blue_text {
+            color: $single_card_color;
+        }
+
+        .border_top_grey {
+            border-top: $border_single_card;
+        }
+        .border_grey {
+            border-top: $border_single_card;
+            border-bottom: $border_single_card;
+        }
+
+        h3 {
+            font-size: 16px;
+            padding-bottom: 20px;
+        }
+    }
 }

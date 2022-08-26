@@ -59,4 +59,67 @@
             </div>
         </div>
     </section>
+
+    {{-- info-comic-section --}}
+    <section id="info_comic_section">
+        <div class="small_container">
+            <div class="info-row">
+                <div class="talent_col">
+                    <h3>Talent</h3>
+
+                    <div class="artists-row border_top_grey">
+                        <div class="left-artists-col">
+                            Art by:
+                        </div>
+                        <div class="right-artists-col">
+                            @foreach ($current_comic['artists'] as $artist )
+                                <span class="blue_text">{{ $artist }}</span> @if (!@$loop->last), @endif
+                            @endforeach
+                        </div>
+                    </div>
+    
+                    <div class="writers-row border_grey">
+                        <div class="left-writers-col">
+                            Written by:
+                        </div>
+                        <div class="right-writers-col">
+                            @foreach ($current_comic['writers'] as $writer )
+                            <span class="blue_text">{{ $writer }}</span> @if (!@$loop->last), @endif
+                            @endforeach
+                        </div>
+                    </div>
+                </div>
+                <div class="specs_col">
+                    <h3>Specs</h3>
+
+                    <div class="series-row border_top_grey">
+                        <div class="left-series-col">
+                            Series:
+                        </div>
+                        <div class="blue_text right-series-col">
+                            {{ $current_comic['series'] }}
+                        </div>
+                    </div>
+    
+                    <div class="us-price-row border_top_grey">
+                        <div class="left-price-col">
+                            U.S. Price:
+                        </div>
+                        <div class="right-price-col">
+                            {{ $current_comic['price'] }}
+                        </div>
+                    </div>
+    
+                    <div class="sale-date-row border_grey">
+                        <div class="left-sale-date-col">
+                            on sale date:
+                        </div>
+                        <div class="right-sale-date-col">
+                            {{ $current_comic['sale_date'] }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 @endsection

@@ -352,3 +352,57 @@ footer .footer_bottom .container .flex-icon_links ul li a img {
 #comic-description-section .comic-row .comic-right-col div:first-child {
   text-transform: uppercase;
 }
+
+#info_comic_section {
+  background-color: #f6f6f6;
+  padding: 25px 0 95px;
+  border-top: 1px solid #dcdcdc;
+}
+#info_comic_section .info-row {
+  display: flex;
+  font-size: 10px;
+}
+#info_comic_section .info-row .talent_col {
+  width: 50%;
+  margin-right: 40px;
+}
+#info_comic_section .info-row .talent_col .writers-row, #info_comic_section .info-row .talent_col .artists-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+#info_comic_section .info-row .talent_col .writers-row .right-artists-col, #info_comic_section .info-row .talent_col .writers-row .right-writers-col, #info_comic_section .info-row .talent_col .artists-row .right-artists-col, #info_comic_section .info-row .talent_col .artists-row .right-writers-col {
+  width: 16rem;
+}
+#info_comic_section .info-row .specs_col {
+  width: 50%;
+}
+#info_comic_section .info-row .specs_col .series-row, #info_comic_section .info-row .specs_col .us-price-row, #info_comic_section .info-row .specs_col .sale-date-row {
+  display: flex;
+  padding: 8px 0;
+  justify-content: space-between;
+}
+#info_comic_section .info-row .specs_col .series-row .right-series-col, #info_comic_section .info-row .specs_col .series-row .right-price-col, #info_comic_section .info-row .specs_col .series-row .right-sale-date-col, #info_comic_section .info-row .specs_col .us-price-row .right-series-col, #info_comic_section .info-row .specs_col .us-price-row .right-price-col, #info_comic_section .info-row .specs_col .us-price-row .right-sale-date-col, #info_comic_section .info-row .specs_col .sale-date-row .right-series-col, #info_comic_section .info-row .specs_col .sale-date-row .right-price-col, #info_comic_section .info-row .specs_col .sale-date-row .right-sale-date-col {
+  text-transform: uppercase;
+  width: 15rem;
+}
+#info_comic_section .info-row .specs_col .series-row .right-series-col {
+  text-transform: uppercase;
+}
+#info_comic_section .info-row .specs_col .sale-date-row .left-sale-date-col {
+  text-transform: capitalize;
+}
+#info_comic_section .info-row .blue_text {
+  color: #00a9d9;
+}
+#info_comic_section .info-row .border_top_grey {
+  border-top: 1px solid #dcdcdc;
+}
+#info_comic_section .info-row .border_grey {
+  border-top: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
+}
+#info_comic_section .info-row h3 {
+  font-size: 16px;
+  padding-bottom: 20px;
+}
