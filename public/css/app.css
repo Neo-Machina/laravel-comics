@@ -502,4 +502,11 @@ footer .footer_bottom .container .flex-icon_links ul li a img {
 #home_section {
   background-color: #0282f9;
   height: 70px;
+  padding: 10px;
+}
+
+#movies_section {
+  background-color: #0282f9;
+  height: 70px;
+  padding: 10px;
 }

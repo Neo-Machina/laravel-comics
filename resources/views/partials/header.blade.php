@@ -29,17 +29,17 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="{{ route('home') }}">
+                        <a href="#">
                             characters
                         </a>
                     </li>   
-                    <li class="selected-item">
+                    <li class="{{ Route::current()->getName() === 'comics' ? 'selected-item' : '' }}">
                         <a href="{{ route('comics') }}">
                             comics
                         </a>
                     </li>  
-                    <li>
-                        <a href="#">
+                    <li class="{{ Route::current()->getName() === 'movies' ? 'selected-item' : '' }}">
+                        <a href="{{ route('movies') }}">
                             movies
                         </a>
                     </li>  
