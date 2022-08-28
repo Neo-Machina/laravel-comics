@@ -2,15 +2,15 @@
 .comic-book-section {
     height: 65px;
     background-color: $brand_main_color;
+    position: relative;
 
     .comic-cover-card {
-        position: relative;
+        position: absolute;
+        bottom: 1.2rem;
+        border: 1px solid white;
 
         img {
             width: 9.5rem;
-            position: absolute;
-            bottom: -3rem;
-            border: 1px solid white;
         }
 
         .cover-text {
@@ -23,15 +23,14 @@
 
         .comic-book-top-text {
             position: absolute;
-            bottom: 10.3rem;
-            left: 0.07rem;
+            top: 0;
+            left: 0;
         }
 
         .comic-book-bottom-text {
             position: absolute;
-            bottom: -2.94rem;
-            left: 0.07rem;
-            width: 18.6%;
+            bottom: 0;
+            width: 100%;
             text-align: center;
         }
     }

@@ -33,7 +33,8 @@
                             characters
                         </a>
                     </li>   
-                    <li class="{{ Route::current()->getName() === 'comics' ? 'selected-item' : '' }}">
+                    <li class="{{ Route::current()->getName() === 'comics' ? 'selected-item' : '' }}
+                                {{ Route::current()->getName() === 'single_comic' ? 'selected-item' : '' }}">
                         <a href="{{ route('comics') }}">
                             comics
                         </a>
