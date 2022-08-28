@@ -190,44 +190,40 @@
     border-top: $border_single_card;
     position: relative;
 
-    .small_container {
-        height: 100%;
+    .nav-icons-services {
+        ul {
+            display: flex;
 
-        .nav-icons-services {
-            ul {
+            .service-card {
+                width: calc(100% / 4);
+                height: 66px;
+                padding: 14px;
+                border-left: 1px solid #fff;
+                border-top: 1px solid #fff;
+                border-right: $border_single_card;
+                font-size: 10px;
+                text-transform: $text_uppercase;
+                cursor: pointer;
+                color: #9f9f9f;
                 display: flex;
+                justify-content: space-between;
 
-                .service-card {
-                    width: calc(100% / 4);
-                    height: 66px;
-                    padding: 14px;
-                    border-left: 1px solid #fff;
-                    border-top: 1px solid #fff;
-                    border-right: $border_single_card;
-                    font-size: 10px;
-                    text-transform: $text_uppercase;
-                    cursor: pointer;
-                    color: #9f9f9f;
-                    display: flex;
-                    justify-content: space-between;
+                &:hover {
+                    color: #012d41;;
+                }
 
-                    &:hover {
-                        color: #012d41;;
+                .icon {
+                    width: 37px;
+                    height: 37px;
+                    background-image: url('/img/cta-icons.png');
+                }
+
+                @for $i from 1 through 4 {
+                    &:nth-child(#{$i}) .icon {
+                        background-position: ($i - 1) * 37px 0;
                     }
-
-                    .icon {
-                        width: 37px;
-                        height: 37px;
-                        background-image: url('/img/cta-icons.png');
-                    }
-
-                    @for $i from 1 through 4 {
-                        &:nth-child(#{$i}) .icon {
-                            background-position: ($i - 1) * 37px 0;
-                        }
-                        &:nth-child(#{$i}):hover .icon {
-                            background-position: ($i - 1) * 37px 37px;
-                        }
+                    &:nth-child(#{$i}):hover .icon {
+                        background-position: ($i - 1) * 37px 37px;
                     }
                 }
             }

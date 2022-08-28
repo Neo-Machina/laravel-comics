@@ -98,7 +98,7 @@ header .search {
 header .search input {
   border: 0;
   color: #000;
-  font-size: 5px;
+  font-size: 12px;
   outline: none;
   padding-left: 10px;
   text-align: right;
@@ -449,13 +449,10 @@ footer .footer_bottom .container .flex-icon_links ul li a img {
   border-top: 1px solid #dcdcdc;
   position: relative;
 }
-#icons-comic-section .small_container {
-  height: 100%;
-}
-#icons-comic-section .small_container .nav-icons-services ul {
+#icons-comic-section .nav-icons-services ul {
   display: flex;
 }
-#icons-comic-section .small_container .nav-icons-services ul .service-card {
+#icons-comic-section .nav-icons-services ul .service-card {
   width: 25%;
   height: 66px;
   padding: 14px;
@@ -469,36 +466,36 @@ footer .footer_bottom .container .flex-icon_links ul li a img {
   display: flex;
   justify-content: space-between;
 }
-#icons-comic-section .small_container .nav-icons-services ul .service-card:hover {
+#icons-comic-section .nav-icons-services ul .service-card:hover {
   color: #012d41;
 }
-#icons-comic-section .small_container .nav-icons-services ul .service-card .icon {
+#icons-comic-section .nav-icons-services ul .service-card .icon {
   width: 37px;
   height: 37px;
   background-image: url("/img/cta-icons.png");
 }
-#icons-comic-section .small_container .nav-icons-services ul .service-card:nth-child(1) .icon {
+#icons-comic-section .nav-icons-services ul .service-card:nth-child(1) .icon {
   background-position: 0px 0;
 }
-#icons-comic-section .small_container .nav-icons-services ul .service-card:nth-child(1):hover .icon {
+#icons-comic-section .nav-icons-services ul .service-card:nth-child(1):hover .icon {
   background-position: 0px 37px;
 }
-#icons-comic-section .small_container .nav-icons-services ul .service-card:nth-child(2) .icon {
+#icons-comic-section .nav-icons-services ul .service-card:nth-child(2) .icon {
   background-position: 37px 0;
 }
-#icons-comic-section .small_container .nav-icons-services ul .service-card:nth-child(2):hover .icon {
+#icons-comic-section .nav-icons-services ul .service-card:nth-child(2):hover .icon {
   background-position: 37px 37px;
 }
-#icons-comic-section .small_container .nav-icons-services ul .service-card:nth-child(3) .icon {
+#icons-comic-section .nav-icons-services ul .service-card:nth-child(3) .icon {
   background-position: 74px 0;
 }
-#icons-comic-section .small_container .nav-icons-services ul .service-card:nth-child(3):hover .icon {
+#icons-comic-section .nav-icons-services ul .service-card:nth-child(3):hover .icon {
   background-position: 74px 37px;
 }
-#icons-comic-section .small_container .nav-icons-services ul .service-card:nth-child(4) .icon {
+#icons-comic-section .nav-icons-services ul .service-card:nth-child(4) .icon {
   background-position: 111px 0;
 }
-#icons-comic-section .small_container .nav-icons-services ul .service-card:nth-child(4):hover .icon {
+#icons-comic-section .nav-icons-services ul .service-card:nth-child(4):hover .icon {
   background-position: 111px 37px;
 }
 

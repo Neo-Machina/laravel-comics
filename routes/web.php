@@ -69,6 +69,10 @@ Route::get('/single-comic/{id}', function ($id) {
         }
     }
 
+    if(empty($current_comic)) {
+        abort('404');
+    }
+
     $data = [
         'current_comic' => $current_comic,
     ];
