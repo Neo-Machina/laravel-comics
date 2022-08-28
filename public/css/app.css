@@ -447,32 +447,59 @@ footer .footer_bottom .container .flex-icon_links ul li a img {
 #icons-comic-section {
   background-color: #f6f6f6;
   border-top: 1px solid #dcdcdc;
-  height: 110px;
   position: relative;
-  z-index: 10;
 }
 #icons-comic-section .small_container {
   height: 100%;
-  z-index: 10;
 }
-#icons-comic-section .small_container ul {
-  height: 100%;
+#icons-comic-section .small_container .nav-icons-services ul {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
 }
-#icons-comic-section .small_container ul li a .flex-icon {
-  display: flex;
-  align-items: center;
-}
-#icons-comic-section .small_container ul li a .flex-icon img {
-  width: 35px;
-  margin-right: 12px;
-}
-#icons-comic-section .small_container ul li a .flex-icon div {
-  font-size: 11px;
+#icons-comic-section .small_container .nav-icons-services ul .service-card {
+  width: 25%;
+  height: 66px;
+  padding: 14px;
+  border-left: 1px solid #fff;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #dcdcdc;
+  font-size: 10px;
   text-transform: uppercase;
-  color: white;
+  cursor: pointer;
+  color: #9f9f9f;
+  display: flex;
+  justify-content: space-between;
+}
+#icons-comic-section .small_container .nav-icons-services ul .service-card:hover {
+  color: #012d41;
+}
+#icons-comic-section .small_container .nav-icons-services ul .service-card .icon {
+  width: 37px;
+  height: 37px;
+  background-image: url("/img/cta-icons.png");
+}
+#icons-comic-section .small_container .nav-icons-services ul .service-card:nth-child(1) .icon {
+  background-position: 0px 0;
+}
+#icons-comic-section .small_container .nav-icons-services ul .service-card:nth-child(1):hover .icon {
+  background-position: 0px 37px;
+}
+#icons-comic-section .small_container .nav-icons-services ul .service-card:nth-child(2) .icon {
+  background-position: 37px 0;
+}
+#icons-comic-section .small_container .nav-icons-services ul .service-card:nth-child(2):hover .icon {
+  background-position: 37px 37px;
+}
+#icons-comic-section .small_container .nav-icons-services ul .service-card:nth-child(3) .icon {
+  background-position: 74px 0;
+}
+#icons-comic-section .small_container .nav-icons-services ul .service-card:nth-child(3):hover .icon {
+  background-position: 74px 37px;
+}
+#icons-comic-section .small_container .nav-icons-services ul .service-card:nth-child(4) .icon {
+  background-position: 111px 0;
+}
+#icons-comic-section .small_container .nav-icons-services ul .service-card:nth-child(4):hover .icon {
+  background-position: 111px 37px;
 }
 
 #home_section {

@@ -126,19 +126,26 @@
     {{-- icons-comic-section --}}
     <section id="icons-comic-section">
         <div class="small_container"> 
-            {{-- <ul>
-                @foreach ( $icon_menu as $icon )
-                    <li>
-                        <a href="{{ $icon['url'] }}">
-                            <div class="flex-icon">
-                                <div>{{ $icon['text'] }}</div>
-    
-                                <img src="{{ asset($icon['imgSrc']) }}" altImg="{{ $icon['altImg'] }}">
-                            </div>
-                        </a>
+            <nav class="nav-icons-services">
+                <ul>
+                    <li class="service-card">
+                        <span>Digital comics</span>
+                        <div class="icon"></div>
                     </li>
-                @endforeach
-            </ul> --}}
+                    <li class="service-card">
+                        <span>Shop DC</span>
+                        <div class="icon"></div>
+                    </li>
+                    <li class="service-card">
+                        <span>Comic shop locator</span>
+                        <div class="icon"></div>
+                    </li>
+                    <li class="service-card">
+                        <span>Subscriptions</span>
+                        <div class="icon"></div>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </section>
 @endsection
